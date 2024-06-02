@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diversity in Healthcare Alliance (DHA)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e0f7fa;
+            color: #333;
+        }
+        header {
+            background-color: #0288d1;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            padding: 1em;
+            background-color: #03a9f4;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            padding: 2em;
+            max-width: 800px;
+            margin: auto;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 1em;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #0288d1;
+            color: white;
+        }
+        .form-group {
+            margin-bottom: 1em;
+        }
+        label {
+            display: block;
+            margin-bottom: .5em;
+            font-weight: bold;
+        }
+        input, textarea, select {
+            width: 100%;
+            padding: .5em;
+            margin-bottom: .5em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #0288d1;
+            color: white;
+            padding: .75em 1.5em;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0277bd;
+        }
+        .hero {
+            background-color: #03a9f4;
+            color: white;
+            text-align: center;
+            padding: 2em 0;
+        }
+        .hero p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Diversity in Healthcare Alliance (DHA)</h1>
+</header>
+
+<nav>
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#join">Join Us</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="hero" id="home">
+    <h2>Welcome to DHA</h2>
+    <p>Promoting Diversity, Equity, and Inclusion in Healthcare</p>
+</div>
+
+<div class="container" id="about">
+    <h2>About Us</h2>
+    <p>The Diversity in Healthcare Alliance (DHA) is dedicated to fostering a more inclusive, equitable, and diverse healthcare community. Our mission is to empower and support underrepresented groups in the healthcare field through education, mentorship, advocacy, and community engagement.</p>
+</div>
+
+<div class="container" id="join">
+    <h2>Join Us</h2>
+    <form action="https://your-google-form-url-here" method="post">
+        <div class="form-group">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number:</label>
+            <input type="text" id="phone" name="phone">
+        </div>
+        <div class="form-group">
+            <label for="school">School/Institution:</label>
+            <input type="text" id="school" name="school" required>
+        </div>
+        <div class="form-group">
+            <label for="grade">Grade Level:</label>
+            <select id="grade" name="grade">
+                <option value="freshman">Freshman</option>
+                <option value="sophomore">Sophomore</option>
+                <option value="junior">Junior</option>
+                <option value="senior">Senior</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="interest">Area of Interest in Healthcare:</label>
+            <input type="text" id="interest" name="interest" required>
+        </div>
+        <div class="form-group">
+            <label for="why">Why are you interested in joining DHA?</label>
+            <textarea id="why" name="why" rows="4" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="skills">What skills or experiences can you bring to the organization?</label>
+            <textarea id="skills" name="skills" rows="4"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="activities">Which activities are you most interested in?</label>
+            <select id="activities" name="activities[]" multiple>
+                <option value="workshops">Educational Workshops</option>
+                <option value="mentorship">Mentorship Program</option>
+                <option value="service">Community Service Projects</option>
+                <option value="research">Research Projects</option>
+                <option value="networking">Networking Events</option>
+                <option value="fundraising">Fundraising and Advocacy</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="leadership">Would you be interested in taking on a leadership role or joining a committee?</label>
+            <select id="leadership" name="leadership">
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+                <option value="maybe">Maybe</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="referral">How did you hear about DHA?</label>
+            <select id="referral" name="referral">
+                <option value="school">School Announcement</option>
+                <option value="friend">Friend/Peer</option>
+                <option value="social_media">Social Media</option>
+                <option value="website">Website</option>
+                <option value="event">Event/Fair</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="comments">Any additional comments or questions?</label>
+            <textarea id="comments" name="comments" rows="4"></textarea>
+        </div>
+        <button type="submit">Join Us</button>
+    </form>
+</div>
+
+<div class="container" id="contact">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or would like more information about DHA, please contact us at:</p>
+    <p>Email: <a href="mailto:info@dha.org">info@dha.org</a></p>
+    <p>Phone: (123) 456-7890</p>
+</div>
+
+<footer>
+    <p>&copy; 2024 Diversity in Healthcare Alliance. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
